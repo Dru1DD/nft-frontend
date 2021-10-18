@@ -9,15 +9,14 @@ import { GoAlert } from "react-icons/go";
 
 const App: React.FunctionComponent = () => {
     const [isModal, setIsModal] = useState<boolean>(false)
-    const [isError, setIsError] = useState<boolean>(false)
 
-    const { active, library, connector, account, activate, deactivate } = useWeb3React()
+    const { active, library, error, account, activate, deactivate } = useWeb3React()
 
     const connect: () => void = async () => {
         try {
             await activate(injected)
         } catch(e) {
-            setIsError(!isError)
+            console.log(e)
         }
     }
 
@@ -40,12 +39,12 @@ const App: React.FunctionComponent = () => {
                 shouldCloseOnEsc={true}
                 shouldCloseOnOverlayClick={true}
             >
-
+                {console.log(library)}
                 <div className="modal-container">
                     <h1 className="modal-title">Connect Wallet</h1>
                     
                     <div className="modal-main">
-                        {   isError ? (
+                        {   error ? (
                             <>
                             <p className="modal-main-text">
                                 <GoAlert color="red" fontSize="2rem"/>

@@ -12,7 +12,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({isModal, setIsModal}) => 
   return (
     <nav className="navbar">
         <div className="logo">
-            <img className="navbar_logo mb2" src={Logo} alt="logo"/>
+            <img className="navbar_logo" src={Logo} width={56} height={56} alt="logo"/>
         </div>
       
       <ul

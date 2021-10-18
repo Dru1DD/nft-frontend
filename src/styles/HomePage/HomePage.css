@@ -1,4 +1,4 @@
-.homePage { 
+ .homePage { 
     position: relative;
     width: 100%;
     height: 450vh;
@@ -86,4 +86,12 @@
 
 .first_yellow:hover {
     color:yellow;
+} 
+
+@media screen and (max-width: 400px) {
+    .homePage {
+        position: relative;
+        width: 100%;
+        height: 400vh; 
+    } 
 }
