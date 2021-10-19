@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nft-frontend/static/css/main.6975c05b.chunk.css",
-    "main.js": "/nft-frontend/static/js/main.83d57515.chunk.js",
-    "main.js.map": "/nft-frontend/static/js/main.83d57515.chunk.js.map",
+    "main.js": "/nft-frontend/static/js/main.e5997ab3.chunk.js",
+    "main.js.map": "/nft-frontend/static/js/main.e5997ab3.chunk.js.map",
     "runtime-main.js": "/nft-frontend/static/js/runtime-main.c13113e6.js",
     "runtime-main.js.map": "/nft-frontend/static/js/runtime-main.c13113e6.js.map",
     "static/js/2.9e67e2f5.chunk.js": "/nft-frontend/static/js/2.9e67e2f5.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/nft-frontend/index.html",
     "static/css/main.6975c05b.chunk.css.map": "/nft-frontend/static/css/main.6975c05b.chunk.css.map",
     "static/js/2.9e67e2f5.chunk.js.LICENSE.txt": "/nft-frontend/static/js/2.9e67e2f5.chunk.js.LICENSE.txt",
-    "static/media/Jungle.jpg.cd048d29.png": "/nft-frontend/static/media/Jungle.jpg.cd048d29.png",
+    "static/media/Jungle.jpg.6de3b2f5.png": "/nft-frontend/static/media/Jungle.jpg.6de3b2f5.png",
     "static/media/LOGO.546bb4bd.png": "/nft-frontend/static/media/LOGO.546bb4bd.png",
     "static/media/background.007a447b.jpg": "/nft-frontend/static/media/background.007a447b.jpg"
   },
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c13113e6.js",
     "static/js/2.9e67e2f5.chunk.js",
     "static/css/main.6975c05b.chunk.css",
-    "static/js/main.83d57515.chunk.js"
+    "static/js/main.e5997ab3.chunk.js"
   ]
 }
