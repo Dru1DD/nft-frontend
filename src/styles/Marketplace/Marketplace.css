@@ -1,0 +1,237 @@
+.marketplace {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,11,36,1) 13%, rgba(34,0,255,1) 75%);
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.header_first_part {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_second_part {
+    width: 100%;
+}
+.header_list { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_item {
+      margin-left: 10px;
+      color: white;
+  }
+  
+  .header_link {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    vertical-align: middle;
+  }
+  
+  .header_link:hover {
+    cursor: pointer;
+    border-color: white;
+    transition: 250ms;
+  }
+
+.banner_media {
+    width: 100%;
+    height: 650px;
+    background-image: url("https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_media_main {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner_media_main_title {
+    text-align: center;
+}
+
+.banner_media_main_subtitle {
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+}
+
+.banner_media_main_button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.main_collection {
+    width: 100%;
+    color: white;
+}
+
+.main_collection_oneElem {
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+.main_collection_title {
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.main_collection_filters {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main_collection_dropdown {
+    margin-left: 10%;
+}
+
+.main_collection_search {
+    margin-right: 10%;
+} 
+
+.main_collection_submit_button {
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: rgba(128, 0, 128, 0.4);
+}
+
+.main_collection_submit_button:hover {
+    background-color: rgb(128, 0, 128);
+}
+.main_collection_input {
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main_collection_input input:focus {
+    border: none;
+}
+.main_collection_list {
+    width: 90%;
+    height: 100%;
+
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_collection_list_item {
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    border: 0.025px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.main_collection_list_item img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.main_collection_list_item:hover {
+    cursor: pointer;
+    transform: translate(0%, -5%);
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+.main_collection_list_item_firstPart {
+    height: 100%;
+}
+
+.main_collection_list_item_firstPart img {
+    width: 100%;
+    height: 100%;
+}
+.main_collection_list_item_secondPart {
+    height: 30%;
+}
+
+.main_collection_list_item_title {
+    margin-left: 5px;
+}
+
+
+.main_collection_list_item_subtitle {
+    font-weight: normal;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+.main_collection_list_item_price {
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: white;
+    background-color: purple;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_title {
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    
+.main_collection_list_item {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border: 0.025px solid blueviolet;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+}

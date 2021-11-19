@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Header.css"
-import Logo from '../assets/LOGO.png'
 
 interface HeaderProps {
   isModal: boolean
@@ -11,10 +10,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({isModal, setIsModal}) => 
 
   return (
     <nav className="navbar">
-        <div className="logo">
-            <img className="navbar_logo" src={Logo} width={56} height={56} alt="logo"/>
-        </div>
-      
       <ul
         className="navbar__list"
       >

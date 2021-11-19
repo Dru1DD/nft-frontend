@@ -1,0 +1,90 @@
+.gallety_frist_part {
+    width: 100%;
+    position: relative;
+    background-color: #ddd;
+    display: flex;
+}
+
+.gallery_first_main {
+    width: 70%;
+    height: 100%;
+    border-radius: 25px;
+    border: 10px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery_first_entry_list {
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.gallery_second_part {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #222;
+    display: flex;
+}
+
+.gallery_second_title {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-shadow: -11px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.gallery_btn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gallery_second_button {
+    position: absolute;
+    width: 25%;
+    height: 150px;
+    color: white;
+    background-color: purple;
+    border-radius: 25px;
+    font-size: 3.5rem;
+    font-family: Roboto;
+    margin-bottom: 150px;
+    align-self: flex-end;
+    border: 1px solid black;
+    -webkit-box-shadow: -7px 9px 4px 5px purple;
+    box-shadow: -7px 9px 4px 5px purple;
+}
+
+.gallery_second_button:hover {
+    background-color: red;
+    transform: translate(5%, -5%);
+    -webkit-box-shadow: -10px 12px 4px 5px purple;
+    box-shadow: -10px 12px 4px 5px purple;
+}
+
+.gallery_second_button:active {
+    background-color: purple;
+    transform: translate(0%, 0%);
+}
+
+.pr:hover {
+    color: purple;
+}
+
+.yellow:hover {
+    color: yellow;
+}

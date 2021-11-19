@@ -1,0 +1,26 @@
+.modal-item-chart-info {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    border-radius: 20px;
+}
+
+.modal-item-chart-exit {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.md-item-chart-icon {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.modal-item-chart-line {
+    width: 100%;
+    height: 100%;
+}
