@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'unispace-bd';
-  src: local('Unispace-Bold') url(../assets/fonts/unispace_bd.ttf) format('ttf');
-}
 .navbar_container {
   position: sticky;
   width: 100%;
@@ -47,8 +43,6 @@
   border-width: 0px 0px 1px 0px;
   border-color: transparent;
   transition: 250ms;
-
-  font-family: 'unispace-bd';
   font-weight: bold;
 }
 
@@ -61,7 +55,7 @@
   margin: 0px 5px;
   border-style: none;
   border-color: transparent;
-  font-family:'unispace-bd';
+  font-weight: bold;
 }
 
 .navbar_btn:hover {
