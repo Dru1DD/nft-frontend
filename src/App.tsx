@@ -11,7 +11,7 @@ const App: React.FunctionComponent = () => {
   
     return (
         <div className="App">
-            {/* <Header isModal={isModal} setIsModal={setIsModal}/> */}
+            <Header isModal={isModal} setIsModal={setIsModal}/>
 
             <Modal
                 isOpen={isModal}

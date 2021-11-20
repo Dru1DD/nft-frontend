@@ -241,7 +241,7 @@ const items = [
     },
 ]
 
-interface options {
+interface Ioptions {
     text: string
     value: string
 }
@@ -260,7 +260,7 @@ interface Iitems {
     accessory?: string
     nose?: string
 }
-const options: options[] = [
+const options: Ioptions[] = [
     { text: 'Price: Low to High', value: 'price: Low to High' },
     { text: 'Price: High to Low', value: 'price: Hight to Low' },
     { text: "Name: A to Z", value: "name: A to Z"},
@@ -338,7 +338,7 @@ const Marketplace: React.FunctionComponent = () => {
                      key={index}
                  />
             })
-    }, [filter])
+    }, [filter, searchTerm])
 
     const changeHandler = (e: any) => setFilter(e.target.textContent.toLowerCase())
 

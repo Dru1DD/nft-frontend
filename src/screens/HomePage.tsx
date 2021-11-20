@@ -4,16 +4,47 @@ import { useInView } from 'react-intersection-observer'
 import secondBackgroundColor from '../assets/Jungle.jpg.png'
 import backgroundColor from '../assets/BaseBackground.png'
 import firstMan from '../assets/BackgroundCharacter.png'
-import navbarBack from '../assets/TopBarWithoutText.png'
+import mintButton from '../assets/btn/MintbuttonOFFWithoutText.png'
+import mintButtonOff from '../assets/MintbuttonOFF.png'
+import mintButtonOn from '../assets/btn/MintbuttonONWithoutText.png'
+import storyButtonOn from '../assets/StorybuttonON.png'
+import storyButtonOff from '../assets/StorybuttonOFF.png'
+import exploreButtonOn from '../assets/ExplorebuttonON.png'
+import exploreButtonOff from '../assets/ExplorebuttonOFF.png'
+import plate from '../assets/PlateChainsRedlightON.png'
 
 const HomePage: React.FunctionComponent = () => {
+    const [ isStoryClicked, setIsStoryClicked ] = React.useState<boolean>(false)
+    const [ isExploreClicked, setIsExploreClicked ] = React.useState<boolean>(false)
+    const [ isMintClicked, setIsMintClicked ] = React.useState<boolean>(false)
+
     return (
         <div className="homePage">
             <div className="first_part">
                 <img className="first__img" src={backgroundColor} alt="first_img"/>
-                <img className="first_img_man" src={firstMan} alt="first_img_man" /> 
-                <img className="first_header_back" src={navbarBack} alt="navbar_image" />
-            </div>
+                <img className="first_img_man" src={firstMan} alt="first_img_man" />
+                <img 
+                    className="first_btn_back" 
+                    src={isMintClicked ? mintButtonOn : mintButtonOff} 
+                    alt="first_btn"
+                />
+                <img 
+                    className="first_btn_back" 
+                    src={isExploreClicked ? exploreButtonOn : exploreButtonOff} 
+                    alt="first_btn" 
+                />
+                <img 
+                    className="first_btn_back" 
+                    src={isStoryClicked ? storyButtonOn : storyButtonOff} 
+                    alt="first_btn" 
+                />
+                <img className="first_btn_back" src={plate} alt="first_btn_back" />
+                <button className="first_mint_btn " onClick={() => setIsStoryClicked(!isStoryClicked)}>
+                </button>
+                <button className="first_explore_back" onClick={() => setIsExploreClicked(!isExploreClicked)} ></button>
+                <button className="first_mint_back" onClick={() => setIsMintClicked(!isMintClicked)}></button>
+            </div> 
+
             <SecondPart 
                 title="Story"
             />
