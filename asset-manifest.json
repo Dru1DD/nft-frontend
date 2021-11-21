@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nft-frontend/static/css/main.21dfc21d.chunk.css",
-    "main.js": "/nft-frontend/static/js/main.cc4e118a.chunk.js",
-    "main.js.map": "/nft-frontend/static/js/main.cc4e118a.chunk.js.map",
+    "main.js": "/nft-frontend/static/js/main.8ad80c12.chunk.js",
+    "main.js.map": "/nft-frontend/static/js/main.8ad80c12.chunk.js.map",
     "runtime-main.js": "/nft-frontend/static/js/runtime-main.c13113e6.js",
     "runtime-main.js.map": "/nft-frontend/static/js/runtime-main.c13113e6.js.map",
     "static/css/2.14bc97a1.chunk.css": "/nft-frontend/static/css/2.14bc97a1.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/StorybuttonOFF.1b842ea9.png": "/nft-frontend/static/media/StorybuttonOFF.1b842ea9.png",
     "static/media/StorybuttonON.81a58527.png": "/nft-frontend/static/media/StorybuttonON.81a58527.png",
     "static/media/TopBarWithoutText.54106439.png": "/nft-frontend/static/media/TopBarWithoutText.54106439.png",
+    "static/media/animation.gif.ff9f5bd2.gif": "/nft-frontend/static/media/animation.gif.ff9f5bd2.gif",
     "static/media/semantic.min.css": "/nft-frontend/static/media/outline-icons.ddae9b1b.woff",
     "static/media/App.css": "/nft-frontend/static/media/unispace bd.9b5764a7.ttf",
     "static/media/warning.57673dee.png": "/nft-frontend/static/media/warning.57673dee.png"
@@ -33,6 +34,6 @@
     "static/css/2.14bc97a1.chunk.css",
     "static/js/2.fc42c0c2.chunk.js",
     "static/css/main.21dfc21d.chunk.css",
-    "static/js/main.cc4e118a.chunk.js"
+    "static/js/main.8ad80c12.chunk.js"
   ]
 }
