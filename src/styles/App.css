@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Unispace;
+  local: Unispace;
+  src: url("./fonts/unispace\ bd.ttf") format("truetype");
+  font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

@@ -33,7 +33,7 @@
   white-space: nowrap;
 }
 .navbar__link {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -43,11 +43,11 @@
   border-width: 0px 0px 1px 0px;
   border-color: transparent;
   transition: 250ms;
-  font-weight: bold;
+  font-family: Unispace;
 }
 
 .navbar_btn {
-  font-size: 1re,;
+  font-size: 1.5rem;
   text-decoration: none;
   color: blue;
   text-align: center;
@@ -55,7 +55,7 @@
   margin: 0px 5px;
   border-style: none;
   border-color: transparent;
-  font-weight: bold;
+  font-family: Unispace;
 }
 
 .navbar_btn:hover {
@@ -143,6 +143,18 @@
   background-color: blue;
   border-radius: 15px;
   font-size: 0.75rem;
+}
+
+.navbar_btn {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: blue;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 5px;
+  border-style: none;
+  border-color: transparent;
+  font-family: Unispace;
 }
 /*   
 .walletButton {

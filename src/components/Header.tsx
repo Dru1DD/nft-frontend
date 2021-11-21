@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/Header.css"
 import navbarBack from '../assets/TopBarWithoutText.png'
-import WebFont from "webfontloader";
 import { useHistory } from 'react-router'
-import unispace_bd from '../assets/fonts/unispace bd.ttf'
 
 interface HeaderProps {
   isModal: boolean
@@ -14,19 +12,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({isModal, setIsModal}) => 
 
   let history = useHistory()
 
-  useEffect(() => {
-    try {
-      WebFont.load({
-      custom: {
-        families: ['Unispace-Bold'],
-        urls: [`${unispace_bd}`]
-      }
-    })
-    } catch(e) {
-      console.log(e)
-    }
-    
-  }, [])
   const pageHandler: (num: number) => void = (num) => {
     switch(num) {
       case 0: 
@@ -46,19 +31,19 @@ const Header: React.FunctionComponent<HeaderProps> = ({isModal, setIsModal}) => 
         className="navbar__list"
       >
             <li className="navbar__item" onClick={() => pageHandler(0)}>
-              <p className="navbar__link" style={{ fontFamily: 'Unispace-Bold'}}>MARKETPLACE</p>
+              <p className="navbar__link" style={{ fontFamily: 'Unispace'}}>MARKETPLACE</p>
             </li>
             <li className="navbar__item" onClick={() => pageHandler(1)}>
-              <p className="navbar__link" style={{ fontFamily: 'Unispace-Bold'}}>GALLERY</p>
+              <p className="navbar__link" style={{ fontFamily: 'Unispace'}}>GALLERY</p>
             </li>
             <li className="navbar__item" onClick={() => pageHandler(2)}>
-              <p className="navbar__link" style={{ fontFamily: 'Unispace-Bold'}} >MY STUFF</p>
+              <p className="navbar__link" style={{ fontFamily: 'Unispace'}} >MY STUFF</p>
             </li>
             <li className="navbar__item" >
               <p 
                 className="navbar_btn"
                 onClick={() => setIsModal(!isModal)}
-                style={{ fontFamily: 'Unispace-Bold'}}
+                style={{ fontFamily: 'Unispace'}}
               >CONNECT WALLET</p>
             </li>
       </ul>

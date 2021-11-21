@@ -1,22 +1,40 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import "../styles/HomePage/HomePage.css"
 import { useInView } from 'react-intersection-observer'
 import secondBackgroundColor from '../assets/Jungle.jpg.png'
 import backgroundColor from '../assets/BaseBackground.png'
 import firstMan from '../assets/BackgroundCharacter.png'
 import mintButtonOff from '../assets/MintbuttonOFF.png'
-import mintButtonOn from '../assets/btn/MintbuttonONWithoutText.png'
+import mintButtonOn from '../assets/btn/MintbuttonON.png'
 import storyButtonOn from '../assets/StorybuttonON.png'
 import storyButtonOff from '../assets/StorybuttonOFF.png'
 import exploreButtonOn from '../assets/ExplorebuttonON.png'
 import exploreButtonOff from '../assets/ExplorebuttonOFF.png'
 import plate from '../assets/PlateChainsRedlightON.png'
 
+interface IData {
+    isStoryShow: boolean
+    isExploreShow: boolean
+    isMintShow: boolean
+}
 const HomePage: React.FunctionComponent = () => {
-    const [ isStoryClicked, setIsStoryClicked ] = React.useState<boolean>(false)
-    const [ isExploreClicked, setIsExploreClicked ] = React.useState<boolean>(false)
-    const [ isMintClicked, setIsMintClicked ] = React.useState<boolean>(false)
+    const [data, setData] = useState<IData>({
+        isStoryShow: true,
+        isExploreShow: true,
+        isMintShow: true
+    })
 
+    useEffect(() => {
+        setTimeout(() => {
+            setData({
+                ...data,
+                isStoryShow: !data.isStoryShow,
+                isExploreShow: !data.isExploreShow,
+                isMintShow: !data.isMintShow,
+            })
+        }, 5000)
+    }, [data])
+    
     return (
         <div className="homePage">
             <div className="first_part">
@@ -24,24 +42,20 @@ const HomePage: React.FunctionComponent = () => {
                 <img className="first_img_man" src={firstMan} alt="first_img_man" />
                 <img 
                     className="first_btn_back" 
-                    src={isMintClicked ? mintButtonOn : mintButtonOff} 
+                    src={data.isMintShow ? mintButtonOn : mintButtonOff} 
                     alt="first_btn"
                 />
                 <img 
                     className="first_btn_back" 
-                    src={isExploreClicked ? exploreButtonOn : exploreButtonOff} 
+                    src={data.isExploreShow ? exploreButtonOn : exploreButtonOff} 
                     alt="first_btn" 
                 />
                 <img 
                     className="first_btn_back" 
-                    src={isStoryClicked ? storyButtonOn : storyButtonOff} 
+                    src={data.isStoryShow ? storyButtonOn : storyButtonOff} 
                     alt="first_btn" 
                 />
                 <img className="first_btn_back" src={plate} alt="first_btn_back" />
-                <button className="first_mint_btn " onClick={() => setIsStoryClicked(!isStoryClicked)}>
-                </button>
-                <button className="first_explore_back" onClick={() => setIsExploreClicked(!isExploreClicked)} ></button>
-                <button className="first_mint_back" onClick={() => setIsMintClicked(!isMintClicked)}></button>
             </div> 
 
             <SecondPart 

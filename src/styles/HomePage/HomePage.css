@@ -49,37 +49,6 @@
     object-fit: cover;
 }
 
-.first_mint_btn {
-    position: absolute;
-    top: 42%;
-    left: 71%;
-    height: 100px;
-    width: 400px;
-    opacity: 0;
-    z-index: 10;
-}
-
-.first_explore_back {
-    position: absolute;
-    height: 100px;
-    width: 400px;
-    z-index: 10;
-    top: 52%;
-    left: 40%;
-    opacity: 0;
-}
-
-
-.first_mint_back {
-    position: absolute;
-    height: 100px;
-    width: 400px;
-    z-index: 10;
-    top: 42%;
-    left: 8%;
-    opacity: 0;
-
-}
 @media screen and (max-width: 400px) {
     .homePage {
         position: relative;
