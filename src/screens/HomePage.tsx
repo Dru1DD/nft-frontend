@@ -11,6 +11,7 @@ import storyButtonOff from '../assets/StorybuttonOFF.png'
 import exploreButtonOn from '../assets/ExplorebuttonON.png'
 import exploreButtonOff from '../assets/ExplorebuttonOFF.png'
 import plate from '../assets/PlateChainsRedlightON.png'
+import glitched from '../assets/animation.gif.gif'
 
 interface IData {
     isStoryShow: boolean
@@ -24,6 +25,7 @@ const HomePage: React.FunctionComponent = () => {
         isMintShow: true
     })
 
+    const [isGlitched, setIsGlitched] = useState<boolean>(false);
     useEffect(() => {
         setTimeout(() => {
             setData({
@@ -34,11 +36,16 @@ const HomePage: React.FunctionComponent = () => {
             })
         }, 5000)
     }, [data])
-    
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsGlitched(!isGlitched)
+        }, 7000)
+    }, [isGlitched])
     return (
         <div className="homePage">
             <div className="first_part">
-                <img className="first__img" src={backgroundColor} alt="first_img"/>
+                <img className="first__img" src={isGlitched ? glitched :backgroundColor} alt="first_img"/>
                 <img className="first_img_man" src={firstMan} alt="first_img_man" />
                 <img 
                     className="first_btn_back" 
