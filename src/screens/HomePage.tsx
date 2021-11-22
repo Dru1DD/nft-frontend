@@ -10,31 +10,68 @@ import storyButtonOn from '../assets/StorybuttonON.png'
 import storyButtonOff from '../assets/StorybuttonOFF.png'
 import exploreButtonOn from '../assets/ExplorebuttonON.png'
 import exploreButtonOff from '../assets/ExplorebuttonOFF.png'
-import plate from '../assets/PlateChainsRedlightON.png'
-import glitched from '../assets/animation.gif.gif'
+import plateOff from '../assets/PlateChainsRedlightOFF.png'
+import plateON from '../assets/PlateChainsRedlightON.png'
+import glitched from '../assets/video_2021-11-22_23-08-23.gif'
 
 interface IData {
     isStoryShow: boolean
     isExploreShow: boolean
     isMintShow: boolean
+    step: number
 }
 const HomePage: React.FunctionComponent = () => {
     const [data, setData] = useState<IData>({
         isStoryShow: true,
         isExploreShow: true,
-        isMintShow: true
+        isMintShow: true,
+        step: 1
     })
 
     const [isGlitched, setIsGlitched] = useState<boolean>(false);
     useEffect(() => {
-        setTimeout(() => {
-            setData({
+        if(data.step === 1) {
+            setTimeout(() => {
+                        setData({
+                            ...data,
+                            isStoryShow: !data.isStoryShow,
+                            isExploreShow: !data.isExploreShow,
+                            isMintShow: !data.isMintShow,
+                            step: 2
+                        })
+                    }, 4000)
+        } else if (data.step === 2) {
+            setTimeout(() => {
+                setData({
+                    ...data, 
+                    isStoryShow: !data.isStoryShow,
+                    isExploreShow: !data.isExploreShow,
+                    isMintShow: !data.isMintShow,
+                    step: 3
+                })
+            }, 1000)
+        } else if (data.step === 3) {
+            setTimeout(() => {
+                 setData({
                 ...data,
                 isStoryShow: !data.isStoryShow,
                 isExploreShow: !data.isExploreShow,
                 isMintShow: !data.isMintShow,
+                step: 4
             })
-        }, 5000)
+            }, 1000)
+        } else if (data.step === 4) {
+            setTimeout(() => {
+                setData({
+                    ...data,
+                    isStoryShow: !data.isStoryShow,
+                    isExploreShow: !data.isExploreShow,
+                    isMintShow: !data.isMintShow,
+                    step: 1
+                })
+            }, 2000)
+        }
+        
     }, [data])
 
     useEffect(() => {
@@ -62,7 +99,7 @@ const HomePage: React.FunctionComponent = () => {
                     src={data.isStoryShow ? storyButtonOn : storyButtonOff} 
                     alt="first_btn" 
                 />
-                <img className="first_btn_back" src={plate} alt="first_btn_back" />
+                <img className="first_btn_back" src={data.isExploreShow ? plateON : plateOff} alt="first_btn_back" />
             </div> 
 
             <SecondPart 
