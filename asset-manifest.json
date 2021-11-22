@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/nft-frontend/static/css/main.21dfc21d.chunk.css",
-    "main.js": "/nft-frontend/static/js/main.8ad80c12.chunk.js",
-    "main.js.map": "/nft-frontend/static/js/main.8ad80c12.chunk.js.map",
+    "main.js": "/nft-frontend/static/js/main.5919629b.chunk.js",
+    "main.js.map": "/nft-frontend/static/js/main.5919629b.chunk.js.map",
     "runtime-main.js": "/nft-frontend/static/js/runtime-main.c13113e6.js",
     "runtime-main.js.map": "/nft-frontend/static/js/runtime-main.c13113e6.js.map",
     "static/css/2.14bc97a1.chunk.css": "/nft-frontend/static/css/2.14bc97a1.chunk.css",
-    "static/js/2.fc42c0c2.chunk.js": "/nft-frontend/static/js/2.fc42c0c2.chunk.js",
-    "static/js/2.fc42c0c2.chunk.js.map": "/nft-frontend/static/js/2.fc42c0c2.chunk.js.map",
+    "static/js/2.5ee93f4b.chunk.js": "/nft-frontend/static/js/2.5ee93f4b.chunk.js",
+    "static/js/2.5ee93f4b.chunk.js.map": "/nft-frontend/static/js/2.5ee93f4b.chunk.js.map",
     "index.html": "/nft-frontend/index.html",
     "static/css/2.14bc97a1.chunk.css.map": "/nft-frontend/static/css/2.14bc97a1.chunk.css.map",
     "static/css/main.21dfc21d.chunk.css.map": "/nft-frontend/static/css/main.21dfc21d.chunk.css.map",
-    "static/js/2.fc42c0c2.chunk.js.LICENSE.txt": "/nft-frontend/static/js/2.fc42c0c2.chunk.js.LICENSE.txt",
+    "static/js/2.5ee93f4b.chunk.js.LICENSE.txt": "/nft-frontend/static/js/2.5ee93f4b.chunk.js.LICENSE.txt",
     "static/media/BackgroundCharacter.5b1d9f7c.png": "/nft-frontend/static/media/BackgroundCharacter.5b1d9f7c.png",
     "static/media/BaseBackground.37a97ce8.png": "/nft-frontend/static/media/BaseBackground.37a97ce8.png",
     "static/media/ExplorebuttonOFF.85602a16.png": "/nft-frontend/static/media/ExplorebuttonOFF.85602a16.png",
@@ -20,20 +20,21 @@
     "static/media/LOGO.546bb4bd.png": "/nft-frontend/static/media/LOGO.546bb4bd.png",
     "static/media/MintbuttonOFF.9d16d519.png": "/nft-frontend/static/media/MintbuttonOFF.9d16d519.png",
     "static/media/MintbuttonON.7499d17d.png": "/nft-frontend/static/media/MintbuttonON.7499d17d.png",
+    "static/media/PlateChainsRedlightOFF.3eb09d71.png": "/nft-frontend/static/media/PlateChainsRedlightOFF.3eb09d71.png",
     "static/media/PlateChainsRedlightON.41a76ece.png": "/nft-frontend/static/media/PlateChainsRedlightON.41a76ece.png",
     "static/media/StorybuttonOFF.1b842ea9.png": "/nft-frontend/static/media/StorybuttonOFF.1b842ea9.png",
     "static/media/StorybuttonON.81a58527.png": "/nft-frontend/static/media/StorybuttonON.81a58527.png",
     "static/media/TopBarWithoutText.54106439.png": "/nft-frontend/static/media/TopBarWithoutText.54106439.png",
-    "static/media/animation.gif.ff9f5bd2.gif": "/nft-frontend/static/media/animation.gif.ff9f5bd2.gif",
     "static/media/semantic.min.css": "/nft-frontend/static/media/outline-icons.ddae9b1b.woff",
     "static/media/App.css": "/nft-frontend/static/media/unispace bd.9b5764a7.ttf",
+    "static/media/video_2021-11-22_23-08-23.c2921cb1.gif": "/nft-frontend/static/media/video_2021-11-22_23-08-23.c2921cb1.gif",
     "static/media/warning.57673dee.png": "/nft-frontend/static/media/warning.57673dee.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c13113e6.js",
     "static/css/2.14bc97a1.chunk.css",
-    "static/js/2.fc42c0c2.chunk.js",
+    "static/js/2.5ee93f4b.chunk.js",
     "static/css/main.21dfc21d.chunk.css",
-    "static/js/main.8ad80c12.chunk.js"
+    "static/js/main.5919629b.chunk.js"
   ]
 }
