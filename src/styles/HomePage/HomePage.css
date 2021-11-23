@@ -40,6 +40,8 @@
     margin-right: auto;
     position: absolute;
     object-fit: cover;
+    overflow-x: hover;
+    overflow-y: hover;
 }
 
 .first_btn_back {

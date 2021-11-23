@@ -12,13 +12,21 @@ import exploreButtonOn from '../assets/ExplorebuttonON.png'
 import exploreButtonOff from '../assets/ExplorebuttonOFF.png'
 import plateOff from '../assets/PlateChainsRedlightOFF.png'
 import plateON from '../assets/PlateChainsRedlightON.png'
-import glitched from '../assets/video_2021-11-22_23-08-23.gif'
+import glitched1 from '../assets/BaseBackgroundGlitch1.png'
+import glitched2 from '../assets/BaseBackgroundGlitch2.png'
+import glitched3 from '../assets/BaseBackgroundGlitch3.png'
 
 interface IData {
     isStoryShow: boolean
     isExploreShow: boolean
     isMintShow: boolean
     step: number
+}
+interface IGlitched {
+    step: number
+    isGlitched1: boolean,
+    isGlitched2: boolean,
+    isGlitched3: boolean
 }
 const HomePage: React.FunctionComponent = () => {
     const [data, setData] = useState<IData>({
@@ -27,8 +35,12 @@ const HomePage: React.FunctionComponent = () => {
         isMintShow: true,
         step: 1
     })
-
-    const [isGlitched, setIsGlitched] = useState<boolean>(false);
+    const [dataGlitched, setDataGlitched] = useState<IGlitched>({
+        isGlitched1: false,
+        isGlitched2: false,
+        isGlitched3: false,
+        step: 1
+    });
     useEffect(() => {
         if(data.step === 1) {
             setTimeout(() => {
@@ -75,14 +87,58 @@ const HomePage: React.FunctionComponent = () => {
     }, [data])
 
     useEffect(() => {
-        setTimeout(() => {
-            setIsGlitched(!isGlitched)
-        }, 7000)
-    }, [isGlitched])
+        if(dataGlitched.step === 1) {
+            setTimeout(() => {
+                setDataGlitched({
+                    ...dataGlitched,
+                    isGlitched1: false,
+                    isGlitched2: false,
+                    isGlitched3: false,
+                    step: 2
+                })
+            }, 5000)
+        } else if(dataGlitched.step === 2) {
+            setTimeout(() => {
+                setDataGlitched({
+                    ...dataGlitched,
+                    isGlitched1: true,
+                    isGlitched2: false,
+                    isGlitched3: false,
+                    step: 3
+                })
+            }, 500)
+        } else if(dataGlitched.step === 3) {
+            setTimeout(() => {
+                setDataGlitched({
+                    ...dataGlitched,
+                    isGlitched1: false,
+                    isGlitched2: true,
+                    isGlitched3: false,
+                    step: 4
+                })
+            }, 500)
+        } else if(dataGlitched.step === 4) {
+            setTimeout(() => {
+                setDataGlitched({
+                    ...dataGlitched,
+                    isGlitched1: false,
+                    isGlitched2: false,
+                    isGlitched3: true,
+                    step: 1
+                })
+            }, 500)
+        } 
+    }, [dataGlitched])
+    const whichBackRender = () => {
+        if(dataGlitched.step === 1) return backgroundColor
+        else if(dataGlitched.step === 2) return glitched1
+        else if(dataGlitched.step === 3) return glitched2
+        else if(dataGlitched.step === 4) return glitched3
+    }
     return (
         <div className="homePage">
             <div className="first_part">
-                <img className="first__img" src={isGlitched ? glitched :backgroundColor} alt="first_img"/>
+                <img className="first__img" src={whichBackRender()} alt="first_img"/>
                 <img className="first_img_man" src={firstMan} alt="first_img_man" />
                 <img 
                     className="first_btn_back" 
