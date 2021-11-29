@@ -93,7 +93,7 @@
     box-shadow: 0px 10px 13px -7px #000000, 11px 9px 10px 5px rgba(0,0,0,0.4);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 547px) {
   
 .modal {
   position: fixed;
@@ -111,6 +111,7 @@
 
   .modal-container {
     width: 80%;
+    height: 50%;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;

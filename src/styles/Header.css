@@ -78,7 +78,35 @@
   font-size: 1rem;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
+  .navbar__link {
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    font-family: Unispace;
+  }
+  
+  .navbar_btn {
+    font-size: 1.35rem;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: none;
+    border-color: transparent;
+    font-family: Unispace;
+  }
+}
+
+@media screen and (max-width: 1520px) {
   .navbar__link {
     font-size: 1.25rem;
     text-decoration: none;
@@ -95,6 +123,112 @@
   
   .navbar_btn {
     font-size: 1.25rem;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: none;
+    border-color: transparent;
+    font-family: Unispace;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar__link {
+    font-size: 1.20rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    font-family: Unispace;
+  }
+  
+  .navbar_btn {
+    font-size: 1.20rem;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: none;
+    border-color: transparent;
+    font-family: Unispace;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .navbar {
+    position: relative;
+    width: 700px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+  }
+  .navbar__link {
+    font-size: 1.10rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    font-family: Unispace;
+  }
+  
+  .navbar_btn {
+    font-size: 1.10rem;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: none;
+    border-color: transparent;
+    font-family: Unispace;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar {
+    position: relative;
+    width: 700px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+  }
+  .navbar__link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    font-family: Unispace;
+  }
+  
+  .navbar_btn {
+    font-size: 1rem;
     text-decoration: none;
     color: blue;
     text-align: center;
@@ -108,6 +242,57 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .navbar {
+    position: relative;
+    width: 700px;
+    height: 46px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+  }
+  .navbar__link {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: transparent;
+    transition: 250ms;
+    font-family: Unispace;
+  }
+  
+  .navbar_btn {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    border-style: none;
+    border-color: transparent;
+    font-family: Unispace;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    position: relative;
+    width: 700px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+  }
+  
   .navbar__link {
     font-size: 0.8rem;
     text-decoration: none;
@@ -123,127 +308,8 @@
   }
   
   .navbar_btn {
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: blue;
-    text-align: center;
-    padding: 10px;
-    margin: 0px 5px;
-    border-style: none;
-    border-color: transparent;
-    font-family: Unispace;
-  }
-  
-}
-
-@media screen and (max-width: 800px) {
-.navbar {
-  position: sticky;
-  top: 10px;
-  width: 380px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: black;
-  border-radius: 15px;
-  opacity: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: -66px;
-  z-index: 5;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 11px 9px 10px 5px rgba(0,0,0,0.4); 
-  box-shadow: 0px 10px 13px -7px #000000, 11px 9px 10px 5px rgba(0,0,0,0.4);
-}
-
-.logo {
-  width: 80px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 3.5px solid red;
-}
-
-.navbar_logo {
-  width: 100%;
-  height: 100%;
-}
-
-.navbar__list {
-  display: flex;
-  list-style: none;
-}
-
-.navbar__item {
-  white-space: nowrap;
-}
-
-.navbar__link {
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: transparent;
-  transition: 250ms;
-}
-.navbar__link:hover {
-  border-color: white;
-  transition: 250ms;
-}
-
-.walletButton {
-  width: 80px;
-  height: 80%;
-  color: white;
-  background-color: blue;
-  border-radius: 15px;
-  font-size: 0.75rem;
-}
-
-.navbar_btn {
-  font-size: 0.7rem;
-  text-decoration: none;
-  color: blue;
-  text-align: center;
-  padding: 10px;
-  margin: 0px 5px;
-  border-style: none;
-  border-color: transparent;
-  font-family: Unispace;
-}
-/*   
-.walletButton {
-  width: 150px;
-  height: 56px;
-  color: white;
-  background-color: blue;
-  border-radius: 15px;
-  font-size: 1rem;
-}
- */
-}
-
-@media screen and (max-width: 400px) {
-  .navbar__link {
     font-size: 0.8rem;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px;
-    margin: 0px 5px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: transparent;
-    transition: 250ms;
-    font-family: Unispace;
-  }
-  
-  .navbar_btn {
-    font-size: 0.7rem;
-    text-decoration: none;
     color: blue;
     text-align: center;
     padding: 10px;
@@ -252,5 +318,4 @@
     border-color: transparent;
     font-family: Unispace;
   }
-  
 }

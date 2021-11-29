@@ -129,6 +129,7 @@ const HomePage: React.FunctionComponent = () => {
             }, 500)
         } 
     }, [dataGlitched])
+    
     const whichBackRender = () => {
         if(dataGlitched.step === 1) return backgroundColor
         else if(dataGlitched.step === 2) return glitched1
